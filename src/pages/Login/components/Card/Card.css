@@ -1,0 +1,21 @@
+.login_card {
+  background-color: white;
+  width: 500px;
+  height: 670px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rozetka-logo {
+  margin-top: 80px;
+  margin-bottom: 85px;
+  width: 240px;
+  height: 40px;
+}
+
+.login_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

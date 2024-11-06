@@ -1,0 +1,9 @@
+.input-btn {
+  color: white;
+  font: 600 24px "Inter", serif;
+  background-color: #44b26f;
+  width: 277px;
+  height: 56px;
+  border: none;
+  cursor: pointer;
+}
