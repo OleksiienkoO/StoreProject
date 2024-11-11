@@ -2,7 +2,7 @@ import React from "react";
 import "./Card.css";
 import Input from "../../../../components/Input/Input";
 import InputBtn from "../../../../components/InputBtn/InputBtn";
-import Logo from "../../../../assets/rozetkaLogo.png";
+import Logo from "../../../../assets/rozetkaLogoGreen.png";
 
 function Card() {
   return (
@@ -12,7 +12,7 @@ function Card() {
         {" "}
         <Input type="text" placeholder="User Name" />
         <Input type="password" placeholder="Password" />
-        <InputBtn type="Login" />
+        <InputBtn type="Login" className="login-btn" />
       </div>{" "}
     </div>
   );
