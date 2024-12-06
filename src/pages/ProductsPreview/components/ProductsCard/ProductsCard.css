@@ -1,0 +1,59 @@
+.cards__container {
+    padding-left: 123px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 165px;
+    font: 500 16px "Inter", open-sans;
+}
+
+.card__container {
+    text-align: center;
+    background-color: white;
+    max-width: 273px;
+    padding-top: 37px;
+    padding-bottom: 18px;
+}
+
+.card__name {
+    font: 500 16px "Inter", open-sans;
+}
+
+.card__container img {
+    width: 209px;
+    height: 139px;
+}
+
+.card__info {
+    display: flex;
+    align-items: center;
+    padding-left: 27px;
+    padding-right: 13px;
+    gap: 57px;
+}
+
+.info-price {
+    color: #fc5b00;
+    display: flex;
+    align-items: baseline;
+    font: 500 24px "Inter", open-sans;
+}
+
+.info-price span {
+    font: 700 16px "Inter", open-sans;
+}
+
+.info-quantity {
+    font: 500 15px "Inter", open-sans;
+}
+
+.card__order {
+    color: #05bc52;
+    font: 500 15px "Inter", open-sans;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.card__order p {
+    padding-left: 10px;
+}
