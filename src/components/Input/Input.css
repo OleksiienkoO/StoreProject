@@ -1,22 +1,23 @@
-.login_input {
-  color: #44b26f;
-  background-color: #d9d9d9;
-  width: 257px;
-  height: 56px;
-  border: none;
-  padding-left: 20px;
+.input__label:nth-child(1) {
+    margin-bottom: 46px;
 }
 
-.login_input::placeholder {
-  color: #44b26f;
-  opacity: 1;
-  font: 600 14px "Inter", serif;
+.input__label:nth-child(2) {
+    margin-bottom: 37px;
 }
 
-.login_input:nth-child(1) {
-  margin-bottom: 46px;
+.input__login {
+    color: inherit;
+    background-color: inherit;
+    height: 56px;
+    border: none;
+    padding-left: 20px;
+    outline: none;
 }
 
-.login_input:nth-child(2) {
-  margin-bottom: 37px;
+.eye__password {
+    color: inherit;
+    width: 30px;
+    height: 30px;
+    padding-right: 16px;
 }
