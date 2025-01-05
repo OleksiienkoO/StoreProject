@@ -1,0 +1,65 @@
+.login_card {
+    background-color: white;
+    width: 500px;
+    height: 670px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rozetka-logo {
+    margin-top: 80px;
+    margin-bottom: 85px;
+    width: 240px;
+    height: 40px;
+}
+
+.login_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+}
+
+.login-btn {
+    color: white;
+    font: 600 24px "Inter", serif;
+    background-color: #44b26f;
+    width: 277px;
+    height: 56px;
+    border: none;
+    cursor: pointer;
+}
+
+.input_error_label {
+    border: solid red 1px;
+}
+
+.input__label {
+    color: #44b26f;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 277px;
+}
+
+.input__label ::placeholder {
+    color: #44b26f;
+    opacity: 1;
+    font: 600 14px "Inter", serif;
+}
+
+.loader-icon {
+    font-size: 3rem;
+    position: relative;
+}
+
+.authentication-login {
+    color: red;
+    font: 600 20px "Open Sans", monospace;
+}
+
+.card__error {
+    color: red;
+}
