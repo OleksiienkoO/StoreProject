@@ -1,11 +1,11 @@
 import React from "react";
 import "./InputBtn.css";
 
-function InputBtn({ className, ActionImg, type, onClick }) {
+function InputBtn({ className, type, onClick, children }) {
   return (
     <button className={className} onClick={onClick}>
       {" "}
-      {ActionImg && <ActionImg className="input__img" color="black" />} {type}{" "}
+      {children} {type}{" "}
     </button>
   );
 }

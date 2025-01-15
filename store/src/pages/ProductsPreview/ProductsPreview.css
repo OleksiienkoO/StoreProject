@@ -1,0 +1,21 @@
+.products__preview__container {
+  background-color: #44b26f;
+  height: 100vh;
+}
+
+.cards__container {
+  margin: 0 auto;
+  max-width: 1334px;
+  padding-top: 62px;
+  padding-left: 123px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 165px;
+  row-gap: 61px;
+  font: 500 16px "Inter", open-sans;
+}
+
+.cards__container a {
+  text-decoration: none;
+  color: inherit;
+}
