@@ -7,7 +7,7 @@ import Logo from "../../../../assets/rozetkaLogoGreen.png";
 import { IoEyeSharp } from "react-icons/io5";
 import { GoEyeClosed } from "react-icons/go";
 import { FiLoader } from "react-icons/fi";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Card() {
   const [IsPassword, setIsPassword] = useState(true);
@@ -33,11 +33,7 @@ function Card() {
     if (response.ok) {
       const data = await response.json();
       localStorage.setItem("jwt_token", data.token);
-      if (data.token) {
-        navigate("/products");
-      } else {
-        setError("Invalid credentials or token mismatch.");
-      }
+      navigate("/products");
       setLoading(false);
       setAuthenticationError(false);
     } else {

@@ -1,0 +1,12 @@
+.logo__container {
+  max-width: 1334px;
+  margin: 0 auto;
+}
+
+.left-side {
+  max-width: 1245px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-top: 31px;
+}

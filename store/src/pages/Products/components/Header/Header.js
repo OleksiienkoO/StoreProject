@@ -1,11 +1,12 @@
 import React from "react";
 import Logo from "../../../../assets/rozetkaLogoWhite.png";
+import "./Header.css";
 
 function Header({ children }) {
   return (
-    <div>
+    <div className="logo__container">
       <img src={Logo} width="240px" />{" "}
-      <div className="left-side"> {children} </div>{" "}
+      <div className={children ? "left-side " : ""}> {children} </div>{" "}
     </div>
   );
 }
