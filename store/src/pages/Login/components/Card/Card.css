@@ -1,4 +1,4 @@
-.login_card {
+.login-card {
     background-color: white;
     width: 500px;
     height: 670px;
@@ -14,14 +14,14 @@
     height: 40px;
 }
 
-.login_form {
+.login-card_form {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 34px;
 }
 
-.login-btn {
+.login-card_btn {
     color: white;
     font: 600 24px "Inter", serif;
     background-color: #44b26f;
@@ -31,11 +31,11 @@
     cursor: pointer;
 }
 
-.input_error_label {
+.input_error-label {
     border: solid red 1px;
 }
 
-.input__label {
+.input_label {
     color: #44b26f;
     background-color: #d9d9d9;
     display: flex;
@@ -44,7 +44,7 @@
     width: 277px;
 }
 
-.input__label ::placeholder {
+.input_label ::placeholder {
     color: #44b26f;
     opacity: 1;
     font: 600 14px "Inter", serif;
@@ -60,6 +60,13 @@
     font: 600 20px "Open Sans", monospace;
 }
 
-.card__error {
+.login-card_error {
     color: red;
+}
+
+.eye-password {
+    color: inherit;
+    width: 30px;
+    height: 30px;
+    padding-right: 16px;
 }

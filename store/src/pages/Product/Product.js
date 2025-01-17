@@ -51,49 +51,38 @@ const Product = () => {
         /div>{" "} <
         div className = "details-container" >
         <
-        div className = "details-header" >
+        div className = "details_header" >
         <
-        InputBtn className = { "go__back" }
+        InputBtn className = { "go-back" }
         onClick = {
             () => navigate(-1) } >
         <
-        LiaArrowLeftSolid className = "go__back__arrow" / > { " " } <
+        LiaArrowLeftSolid className = "go-back_arrow" / > { " " } <
         /InputBtn>{" "} <
         h1 className = "product-name" > { product.name } < /h1>{" "} <
         /div>{" "} <
-        div className = "details-main" >
+        div className = "details_main" >
         <
-        img className = "product__img"
+        img className = "product_img"
         src = { product.productImg }
         alt = { product.name }
         />{" "} <
-        div className = "main-info" >
+        div className = "main_info" >
         <
-        p className = "info__inStock" >
+        p className = "info_in-stock" >
         <
         MdOutlineDoneOutline / > Є в наявності { " " } <
         /p>{" "} <
-        p className = "info__price" > { product.price }₴ < /p>{" "} <
-        p className = "info__quantity" > Кількість: { product.quantity } < /p>{" "} <
+        p className = "info_price" > { product.price }₴ < /p>{" "} <
+        p className = "info_quantity" > Кількість: { product.quantity } < /p>{" "} <
         /div>{" "} <
         /div>{" "} <
-        div className = "details-description" >
+        div className = "details_description" >
         <
-        div className = "description-header" > { " " } <
+        div className = "description-item" > { " " } <
         h5 > Опис < /h5> <p>{product.name}</p > { " " } <
         /div>{" "} <
-        h5 > 15.6 - дюймовий дисплей стандарту Full HD < /h5> <
-        p >
-        Фільми, малюнки та ігри немов оживають на дисплеї стандарту Full HD(1920 x 1080). <
-        /p>{" "} <
-        h5 > Динаміки преміум - класу < /h5> <
-        p >
-        Стереофонічні динаміки JBL, що забезпечують розкішне звучання з ефектом присутності, ідеально підходять для відео, ігор і музики. <
-        /p>{" "} <
-        h5 > Dolby Advanced Audio < /h5> <
-        p >
-        Dolby Advanced Audio— це технологія, завдяки якій на ноутбуці можна відтворити кришталево чіткий просторовий звук за допомогою вбудованих динаміків. <
-        /p>{" "} <
+        p className = "description-text" > { product.description } < /p>{" "} <
         /div>{" "} <
         /div>{" "} <
         /div>

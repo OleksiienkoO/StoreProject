@@ -22,9 +22,9 @@ function ProductsPreview() {
     };
 
     return ( <
-        div className = "products__preview__container" > { " " } <
+        div className = "products-preview-container" > { " " } <
         Header / > { " " } <
-        div className = "cards__container" > { " " } {
+        div className = "cards-container" > { " " } {
             products.slice(0, 6).map((product) => ( <
                 Link to = { `/products/product/${product.id}` }
                 key = { product.id } > { " " } <

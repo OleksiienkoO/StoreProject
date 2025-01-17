@@ -6,7 +6,7 @@ import "./ProductsList.css";
 import InputBtn from "../../../../components/InputBtn/InputBtn";
 
 import ModalDelete from "../../../../components/ModalDelete/ModalDelete";
-import ModalEdit from "../../../../components/ModalEdit/ModalEdit";
+import ProductModal from "../../../../components/ProductModal/ProductModal";
 
 function ProductsList() {
     const [products, setProducts] = useState([]);
@@ -19,7 +19,7 @@ function ProductsList() {
         getProducts();
     }, []);
 
-    const deleteComponent = async(id) => {
+    const deleteProduct = async(id) => {
         try {
             await fetch(
                 `https://6730ed9f7aaf2a9aff0f5b89.mockapi.io/householdAppliances/${id}`, { method: "DELETE" }
@@ -165,13 +165,13 @@ function ProductsList() {
         type = "Delete"
         onClick = {
             () => {
-                deleteComponent(deleteId);
+                deleteProduct(deleteId);
                 setShowModalDelete(false);
             }
         }
         />{" "} <
         /ModalDelete>{" "} <
-        ModalEdit show = { ShowModalEdit }
+        ProductModal show = { ShowModalEdit }
         product = { editingProduct }
         onCancel = {
             () => {
@@ -180,7 +180,8 @@ function ProductsList() {
             }
         }
         onSave = { updateProduct }
-        />{" "} <
+        mode = "edit" /
+        > { " " } <
         />
     );
 }
